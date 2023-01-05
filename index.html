@@ -11,38 +11,36 @@
     <script src=".\script.js"></script>
 </head>
 <body onload="setTimeout(hytiy, 10000)">
-    <div id="content">
-        <h1>Mailing list</h1>
-        <p>But come join the mailing list! Click below to join the dog...</p>
-        
-        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvas" id="btnjoinmaillist">Join the mailing list</a>
+    <h1>Mailing list</h1>
+    <p>But come join the mailing list! Click below to join the dog...</p>
+    
+    <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-controls="offcanvas" id="btnjoinmaillist">Join the mailing list</a>
 
-        <div class="offcanvas offcanvas-start" id="offcanvas" aria-labelledby="offcanvas" >
-            <div class="offcanvas-header">
-                <h5>Give us some details</h5>             
-                <button type="button" class="btn-close text-reset" aria-label="Close" data-bs-dismiss="offcanvas" onclick="clearinput()"></button>            
-            </div>
-            <!-- I still don't get the bootstrap stuff, but hey... I'm not a webdev... wtf does col-sm-10 mean?? idk I haven't read the docs -->
-            <div class="offcanvas-body">
-                <p>The data we collect in this form will only be used to add you to our mailing list.</p>
-                <form>
-                    <div class="row mb-3">
-                        <label class="col-sm-2 col-form-label">email</label>
-                        <div class="col-sm-10">
-                            <input type="email" id="emailinput" placeholder="email@test.com">
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <label class="col-sm-2 col-form-label">name</label>
-                        <div class="col-sm-10">
-                        <input type="text" id="nameinput" placeholder="Alana">                
-                        </div>
-                    </div>            
-                    <button class="btn-success" type="submit" onclick="getmaildata()" id="btn_submit">gimme</button>
-                </form>
-            </div>
-
+    <div class="offcanvas offcanvas-start" id="offcanvas" aria-labelledby="offcanvas" >
+        <div class="offcanvas-header">
+            <h5>Give us some details</h5>             
+            <button type="button" class="btn-close text-reset" aria-label="Close" data-bs-dismiss="offcanvas" onclick="clearinput()"></button>            
         </div>
+        <!-- I still don't get the bootstrap stuff, but hey... I'm not a webdev... wtf does col-sm-10 mean?? idk I haven't read the docs -->
+        <div class="offcanvas-body">
+            <p>The data we collect in this form will only be used to add you to our mailing list.</p>
+            <form>
+                <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label">email</label>
+                    <div class="col-sm-10">
+                        <input type="email" id="emailinput" placeholder="email@test.com">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label class="col-sm-2 col-form-label">name</label>
+                    <div class="col-sm-10">
+                    <input type="text" id="nameinput" placeholder="Alana">                
+                    </div>
+                </div>            
+                <button class="btn-success" type="submit" onclick="getmaildata()" id="btn_submit">gimme</button>
+            </form>
+        </div>
+
     </div>
     
     <footer id="footer">
