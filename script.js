@@ -31,6 +31,13 @@ function clearinput() {
 function hytiy() {
     const hytiy = document.createElement("h6")
     hytiy.innerHTML = "Oi dog, click the button"
+    hytiy.setAttribute("id","oidog")
     hytiy.setAttribute("style","color:red;")
     document.body.insertBefore(hytiy,document.getElementById("btnjoinmaillist"))
+}
+
+function clearoidog() {
+    if(document.getElementById("oidog")) {
+        document.getElementById("oidog").remove()
+    }
 }
